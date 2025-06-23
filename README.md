@@ -21,7 +21,7 @@ Create an empty notion database
 Run the Notion Agent and ask it to create job application entry
 ![image](https://github.com/user-attachments/assets/cab1a643-1fab-4414-b97e-f242a427d576)
 
-Notion will actomatically create an entry based on user's query
+Notion will automatically create an entry based on user's query
 ![image](https://github.com/user-attachments/assets/3b2582e6-4f05-4df4-875d-a40d4ff59a46)
 
 Tell Notion Agent to update the status to "Rejected"
