@@ -46,6 +46,7 @@ After inputting the query, it will automatically generate the cover letter based
 ![image](https://github.com/user-attachments/assets/dad8c654-21e7-49f5-89f6-480ca5299fdc)
 
 It will be downloaded to Desktop by default, user can also click the "Download Word File" button to download the file
+
 ![image](https://github.com/user-attachments/assets/a8d41fc9-a07a-4e39-9205-701cfd800a5b)
 
 Sample of the word doc generated
