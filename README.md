@@ -39,7 +39,6 @@ Notion  Agent can also retrieve and analyse the result based on user's query
 # Cover Letter Agent
 
 Layout of the cover letter agent
-
 ![image](https://github.com/user-attachments/assets/0c94d15b-3fdf-4754-9bbc-9fd3e52ef31f)
 
 After inputting the query, it will automatically generate the cover letter based on the input
