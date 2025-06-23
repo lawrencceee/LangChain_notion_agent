@@ -13,7 +13,7 @@ Notion.py: Created an agent that can dynamically retrieve, analyze and update th
 
 ## 📸 Screenshot
 
-Notion Agent
+# Notion Agent
 
 Create an empty notion database
 ![image](https://github.com/user-attachments/assets/6908ba55-abcd-4ba2-b267-fec02b113df7)
@@ -33,7 +33,7 @@ Notion Agent can also retrieve and analyse the result based on user's query
 
 
 
-Cover Letter Agent
+# Cover Letter Agent
 
 Layout of the cover letter agent
 ![image](https://github.com/user-attachments/assets/0c94d15b-3fdf-4754-9bbc-9fd3e52ef31f)
