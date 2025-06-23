@@ -19,7 +19,7 @@ os.environ["LANGCHAIN_TRACING_V2"] = "true"
 llm = ChatOpenAI(model="gpt-4.1-mini-2025-04-14")
 
 # Set database ID
-DATABASE_ID = "YOUR DATABASE ID"
+DATABASE_ID = "YOUR NOTION DATABASE ID"
 
 # Get the date information
 today = datetime.now().date()
