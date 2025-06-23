@@ -33,7 +33,7 @@ file_name = st.text_input("Enter a filename (without extension):", value="")
 if input_text and file_name and company_name and job_title:
     prompt = f"""
     Write a professional cover letter for the position of {job_title} at {company_name}, located at {company_address}.
-    My name is 'Lawrence Kong', email is 'slawrencekong@gmail.com', phone number is '+1 647-964-8082'.  Just put these info in the cover letter. Date use today's date.
+    My name is 'XXX', email is 'XXX', phone number is 'XXX'.  Just put these info in the cover letter. Date use today's date.
     Make the letter personalized, concise, and convincing. Use the following additional instructions from the user:
 
     {input_text}
