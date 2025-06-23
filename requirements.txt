@@ -1,8 +1,0 @@
-langchain
-langchain-openai
-langchain_community
-langsmith
-python-dotenv
-python-docx
-pathlib
-notion-client
