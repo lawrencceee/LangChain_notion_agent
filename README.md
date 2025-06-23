@@ -27,7 +27,10 @@ Notion will automatically create an entry based on user's query
 Tell Notion Agent to update the status to "Rejected"
 ![image](https://github.com/user-attachments/assets/bb963eda-1c9a-4bde-a059-2e623167b80c)
 
-Notion Agent can also retrieve and analyse the result based on user's query
+The job status in Notion database will automatically be updated
+![image](https://github.com/user-attachments/assets/2be89456-9e21-4a1c-9618-fccd8aeb04ce)
+
+Notion  Agent can also retrieve and analyse the result based on user's query
 ![image](https://github.com/user-attachments/assets/dd621d30-01f9-4833-a1cd-e6c377621f27)
 ![image](https://github.com/user-attachments/assets/8d8b6207-f2a9-4c1a-833d-80dc7fde8940)
 
