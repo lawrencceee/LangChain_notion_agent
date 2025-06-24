@@ -126,6 +126,18 @@ def get_filter_from_llm(nl_prompt: str) -> dict:
       }}
     }}
 
+    Input: "Did I apply to analyst job in citi?"
+    Output:
+    {{
+      "filter": {{
+        "and": [
+          {{"property": "Status", "status": {{"is_not_empty": true}}}},
+          {{"property": "Job", "title": {{"contains": "Analyst"}}}},
+          {{"property": "Company", "rich_text": {{"equals": "Citi"}}}}
+        ]
+      }}
+    }}
+
     Input: "How many jobs did I apply?"
     Output:
     {{
