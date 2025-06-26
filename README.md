@@ -10,7 +10,7 @@ Notion.py: Created an agent that can dynamically retrieve, analyze and update th
 - ✍️ Creates, updates, and deletes entries in your Notion database
 
 ## 📖 Flow Diagram
-![Untitled Diagram drawio](https://github.com/user-attachments/assets/79e9f216-8386-4984-b868-760404fe2fb0)
+![Screenshot 2025-06-26 141531](https://github.com/user-attachments/assets/52ead70e-9c49-4547-9958-73c38f958a52)
 
 
 ## 📸 Screenshot
