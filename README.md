@@ -9,6 +9,10 @@ Notion.py: Created an agent that can dynamically retrieve, analyze and update th
 - 📊 Retrieves and analyzes job applications
 - ✍️ Creates, updates, and deletes entries in your Notion database
 
+## 📖 Flow Diagram
+![Untitled Diagram drawio](https://github.com/user-attachments/assets/79e9f216-8386-4984-b868-760404fe2fb0)
+
+
 ## 📸 Screenshot
 
 # Notion Agent
