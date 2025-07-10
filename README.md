@@ -13,7 +13,7 @@ Notion_langgraph.py: restructured notion.py by integrating langgraph
 ## 📖 Flow Diagram of notion.py
 ![Untitled Diagram](https://github.com/user-attachments/assets/a2726d31-4e04-4ea7-ba14-d141aa919309)
 
-## 📖 Langgraph chart of notion_langgraph.py
+## 📖 LangGraph chart of notion_langgraph.py
 ![image](https://github.com/user-attachments/assets/7a2c1a2a-ed3e-4671-84b1-1b5e8fc8d5b7)
 
 
