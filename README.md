@@ -2,6 +2,7 @@
 # 📘 Project Title
 
 Notion.py: Created an agent that can dynamically retrieve, analyze and update the Notion database based on user's query with Streamlit UX.
+Notion_langgraph.py: restructured notion.py by integrating langgraph
 
 ## 🚀 Features
 
@@ -9,9 +10,11 @@ Notion.py: Created an agent that can dynamically retrieve, analyze and update th
 - 📊 Retrieves and analyzes job applications
 - ✍️ Creates, updates, and deletes entries in your Notion database
 
-## 📖 Flow Diagram
+## 📖 Flow Diagram of notion.py
 ![Untitled Diagram](https://github.com/user-attachments/assets/a2726d31-4e04-4ea7-ba14-d141aa919309)
 
+## 📖 Langgraph chart of notion_langgraph.py
+![image](https://github.com/user-attachments/assets/7a2c1a2a-ed3e-4671-84b1-1b5e8fc8d5b7)
 
 
 ## 📸 Screenshot
