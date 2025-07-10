@@ -17,7 +17,7 @@ notion = Client(auth=os.getenv("NOTION_API_KEY"))
 os.environ["LANGCHAIN_PROJECT"] = "NotionAgentProject"
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 llm = ChatOpenAI(model="gpt-4.1-mini-2025-04-14")
-DATABASE_ID = "21778a0f14a5819ab488fe65778f59a7"
+DATABASE_ID = "notion_database_id"
 
 # --- Date helpers ---
 today = datetime.now().date()
