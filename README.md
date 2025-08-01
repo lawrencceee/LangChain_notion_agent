@@ -1,4 +1,4 @@
-# LangChain agent
+# LangChain agent with Notion
 # 📘 Project Title
 
 Notion.py: Created an agent that can dynamically retrieve, analyze and update the Notion database based on user's query with Streamlit UX.
