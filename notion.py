@@ -181,32 +181,45 @@ def get_filter_from_llm(nl_prompt: str) -> dict:
         raise ValueError(f"Failed to parse LLM response as JSON. Raw output:\n{response}\n\nError: {e}")
 
 # Function to query Notion database with a filter
-def query_notion_database(filter_obj: dict) -> list:
+def query_notion_database(payload: dict) -> list:
+    all_results = []
+    has_more = True
+    next_cursor = None
 
-    results = notion.databases.query(
-        database_id=DATABASE_ID,
-        **filter_obj
-    )
+    while has_more:
+        if next_cursor:
+            payload["start_cursor"] = next_cursor
 
+        response = notion.databases.query(database_id=DATABASE_ID, **payload)
+        all_results.extend(response["results"])
+        has_more = response.get("has_more", False)
+        next_cursor = response.get("next_cursor")
+
+    # Now parse the results like you already do
     records = []
-    for result in results["results"]:
-        props = result["properties"]
+    for item in all_results:
+        props = item["properties"]
         record = {}
-        for name, prop in props.items():
-            prop_type = prop.get("type")
-            if prop_type == "title":
-                record[name] = prop["title"][0]["text"]["content"] if prop["title"] else ""
-            elif prop_type == "rich_text":
-                record[name] = prop["rich_text"][0]["text"]["content"] if prop["rich_text"] else ""
-            elif prop_type == "status":
-                record[name] = prop["status"]["name"] if prop["status"] else ""
-            elif prop_type == "date":
-                record[name] = prop["date"]["start"] if prop["date"] else ""
-            else:
-                record[name] = "[Unsupported]"
+        for name, prop_data in props.items():
+            prop_type = prop_data.get("type")
+            value = None
+            if prop_type == "title" and prop_data.get("title"):
+                value = prop_data["title"][0]["text"]["content"]
+            elif prop_type == "rich_text" and prop_data.get("rich_text"):
+                value = prop_data["rich_text"][0]["text"]["content"]
+            elif prop_type == "select" and prop_data.get("select"):
+                value = prop_data["select"]["name"]
+            elif prop_type == "status" and prop_data.get("status"):
+                value = prop_data["status"]["name"]
+            elif prop_type == "date" and prop_data.get("date"):
+                value = prop_data["date"]["start"]
+            elif prop_type == "url" and prop_data.get("url"):
+                value = prop_data["url"]
+            if value is not None:
+                record[name] = value
         records.append(record)
-    return records
 
+    return records
 # Function to let LLM decide what to do based on query
 def get_intent_and_payload(nl_prompt: str) -> dict:
     prompt = f"""
@@ -314,3 +327,4 @@ if st.button("Run") and nl_prompt:
 
     except Exception as e:
         st.error(f"❌ Error: {e}")
+
